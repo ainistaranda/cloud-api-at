@@ -1,7 +1,7 @@
 import { initializeApp, cert, getApps } from "firebase-admin/app"
-import { getFirestone, getFirestore } from "firebase-admin/firestore"
+import { getFirestore } from "firebase-admin/firestore"
 
-import { ServiceAccount } from "../secrets.js"
+import serviceAccount  from "../secrets.js"
 
 export function dbConnect() {
     if(!getApps().length) {
